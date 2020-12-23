@@ -27,3 +27,5 @@ Som profesionálny python programátor už 6 rokov a programovanie ma veľmi bav
 - [Výnimky](https://youtu.be/0YrtiuSQxuQ)
 - [Súbory](https://youtu.be/fb0x0YwInVM)
 - [Vlastné moduly (Custom modules)](https://youtu.be/ea6R0ZygfLM)
+
+https://github.com/misohu/kurz_pythonu
