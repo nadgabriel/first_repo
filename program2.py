@@ -1,2 +1,2 @@
 # 
-# doplnenie 
+# doplnenie od Lukasa 
