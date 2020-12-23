@@ -10,7 +10,7 @@ Takyto komentar sa pouziva na nieco co sa vola docstring.
 Docstring specifikuje funkciu pomocou komentaru. 
 """
 
-def custom_addition(elemnt1, element2):
+def custom_addition(element1, element2):
     """
     Custom addition function dedicated for addition of element1 and element2.
 
