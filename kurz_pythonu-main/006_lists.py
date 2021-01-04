@@ -22,7 +22,7 @@ best_teacher="Michal Hucko"
 numbers=[0,1,2,3,4,5]
 numbers[0]=10
 print(numbers)
-best_teacher[0]="N"
+# best_teacher[0]="N"
 
 # Upravovat vieme aj pomocou zlozeneho indexu
 numbers[1:3] # is <1;3)
@@ -55,19 +55,19 @@ len("Michal")
 # Funkcia append prida na koniec pola prvok v zatvorke.
 numbers=[0,1,2,3,4,5]
 numbers.append(10)
-print(numbers)
+# print(numbers)
 numbers.append([7, 8])
-print(numbers)
+# print(numbers)
 
 # Funkcia remove vymaze prvok na indexe v zatvorke
 numbers=[0,1,2,3,4,5,0]
 numbers.remove(0)
-print(numbers)
+# print(numbers)
 
 # Prvkami pola mozu byt aj ine polia
 numbers_and_lists=[0, 1, 2, 3, 4, 5, 0, [1, 2], [3, 4, [5]]]
-print(numbers_and_lists[-1])
-print(numbers_and_lists[-1][0])
+# print(numbers_and_lists[-1])
+# print(numbers_and_lists[-1][0])
 
 # Funkcia count vrati pocet vyskytu prvku v zatvorke
 letters = ['m', 'i', 'c', 'h', 'a', 'l', 'h', 'u', 'c', 'k', 'o']
@@ -84,29 +84,46 @@ letters.index('i')
 # Funkcia insert vlozi druhy prvok v zatvorke na poziciu (prvy prvok v zatvorke)
 letters = ['m', 'i', 'c', 'h', 'a', 'l', 'h', 'u', 'c', 'k', 'o']
 letters.insert(3, "x") # add elemet to position
-print(letters)
+# print(letters)
 
 # Funkcia remove vymaze prvy vyskyt znaku v zatvorke
 letters = ['m', 'i', 'c', 'h', 'a', 'l', 'h', 'u', 'c', 'k', 'o']
 letters.remove("c") 
-print(letters)
+# print(letters)
 
 # Funkcia otoci pole
 letters = ['m', 'i', 'c', 'h', 'a', 'l', 'h', 'u', 'c', 'k', 'o']
 letters.reverse()
-print(letters)
+# print(letters)
 
 # Funkcia pop vrati posledny prvok z pola a zaroven ho z neho zmaze
 nums=[1,2,3]
 nums.pop()
-print(nums)
+# print(nums)
 
 # Funkcia clear zmaze cely obsah pola
 letters = ['m', 'i', 'c', 'h', 'a', 'l', 'h', 'u', 'c', 'k', 'o']
 letters.clear() 
-print(letters)
+# print(letters)
 
 # Funkcia sort usporiada pole
 numbers=[8,4,5,1,2,7,8,9,0]
 numbers.sort()
 print(numbers)
+
+
+
+def Diff(li1, li2):
+
+    print(list(list(set(li1)-set(li2))))
+    print(list(list(set(li2)-set(li1))))
+
+
+    return sorted(list(list(set(li1)-set(li2)) + list(set(li2)-set(li1))))
+
+li1 = [1,2,3,4,6]
+li2 = [5,6,7,8,1]
+
+print(sorted(li1))
+print(sorted(li2))
+print("Rozdiely v listoch su: ", Diff(li1,li2))
