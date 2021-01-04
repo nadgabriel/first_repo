@@ -118,7 +118,6 @@ def Diff(li1, li2):
     print(list(list(set(li1)-set(li2))))
     print(list(list(set(li2)-set(li1))))
 
-
     return sorted(list(list(set(li1)-set(li2)) + list(set(li2)-set(li1))))
 
 li1 = [1,2,3,4,6]
