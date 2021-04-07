@@ -3,12 +3,17 @@
 number_tuple = (1, 2, 3)
 print(type(number_tuple))
 number_tuple[0]
-number_tuple[0] = 10 
+# number_tuple[0] = 10 
 
 # Tuples su ovela rychlejsie ako polia a vyuzivaju sa hlavne v slovnikoch (dictionaries), ktore predstavime v dalsej lekcii
 # Ina definicia tuple
 x = 1,2,3
-print(x)
+print("x= ", x)
+
+for item in x:
+    # print("len_x= ", len(x))
+    print("item = ", item)
+    
 
 # Tuple ako navratova hodnota z funkcie
 def funciton_returning_tupple(elemnt1, element2):
@@ -16,9 +21,9 @@ def funciton_returning_tupple(elemnt1, element2):
 funciton_returning_tupple(1, 2)
 
 # Tuple vieme potom rozbalit do premennych
-e1, e2 = funciton_returning_tupple(1, 2)
-print(e1)
-print(e2)
+e1, e2 = funciton_returning_tupple(10, 20)
+print("e1= ", e1)
+print("e2= ", e2)
 
 # Zamlcanie prvku tuple 
 x = (1,2,3)
@@ -28,8 +33,8 @@ print(a,b)
 # No brain syntax Toto nie je touple ale to druhe je tuple 
 not_a_tuple = (2)
 a_tuple = (2,) # with only one element !!! 
-print(type(not_a_tuple))
-print(type(a_tuple))
+print("not_a_tuple= ", type(not_a_tuple))
+print("atuple =", type(a_tuple))
 
 # Bonusove tuples 
 sneaky_tupe = 2,

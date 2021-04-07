@@ -109,19 +109,19 @@ letters.clear()
 # Funkcia sort usporiada pole
 numbers=[8,4,5,1,2,7,8,9,0]
 numbers.sort()
-print(numbers)
+print("sort_numbers = ", numbers)
+print()
 
 
 
-def Diff(li1, li2):
-
-    print(list(list(set(li1)-set(li2))))
-    print(list(list(set(li2)-set(li1))))
-
-    return sorted(list(list(set(li1)-set(li2)) + list(set(li2)-set(li1))))
 
 li1 = [1,2,3,4,6]
 li2 = [5,6,7,8,1]
+
+def Diff(li1, li2):
+    d1 = list(list(set(li1)-set(li2)))
+    d2 = list(list(set(li2)-set(li1)))
+    return sorted(d1 + d2)
 
 print(sorted(li1))
 print(sorted(li2))
